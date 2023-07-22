@@ -1,8 +1,8 @@
 import pyshorteners
-long_url = input("Enter the URL to shorten: ")
+long = input("Enter the URL to shorten: ")
  
 #TinyURL shortener service
-type_tiny = pyshorteners.Shortener()
-short_url = type_tiny.tinyurl.short(long_url)
+tiny = pyshorteners.Shortener()
+short = tiny.tinyurl.short(long)
  
-print("The Shortened URL is: " + short_url)
+print("The Shortened URL is: " + short)
